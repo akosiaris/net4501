@@ -82,10 +82,10 @@ cp /usr/src/tools/tools/nanobsd/packages/* ${NANO_WORLDDIR}/packages
 chroot ${NANO_WORLDDIR} sh -c 'cd packages; pkg_add -v *;cd ..;'
 rm -rf ${NANO_WORLDDIR}/packages
 )
-customize_cmd install_packages
+#customize_cmd install_packages
 
 customize_cmd cust_comconsole
-customize_cmd cust_pkg
+#customize_cmd cust_pkg
 customize_cmd cust_allow_ssh_root
 customize_cmd cust_install_files
 customize_cmd cust_nobeastie 
